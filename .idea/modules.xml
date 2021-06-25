@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/config.iml" filepath="$PROJECT_DIR$/config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common.iml" filepath="$PROJECT_DIR$/.idea/modules/common.iml" group="myProject" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/module-1.iml" filepath="$PROJECT_DIR$/.idea/modules/module-1.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/module-2.iml" filepath="$PROJECT_DIR$/.idea/modules/module-2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/myProject.iml" filepath="$PROJECT_DIR$/.idea/modules/myProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/myProject-build.iml" filepath="$PROJECT_DIR$/.idea/modules/myProject-build.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spark-sbt-multi-model-config.iml" filepath="$PROJECT_DIR$/.idea/modules/spark-sbt-multi-model-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/root.iml" filepath="$PROJECT_DIR$/.idea/modules/root.iml" group="myProject" />
     </modules>
   </component>
 </project>

@@ -8,23 +8,32 @@ lazy val root = (project in file("."))
     name := "myProject"
   )
   .settings(ProjectSettings.root: _*)
-  .aggregate(module1, module2, config)
+  .aggregate(common, module1, module2)
 
 /**
  * -------------------------------------------------------------------------------------------------------------------
  * Modules
  * -------------------------------------------------------------------------------------------------------------------
  **/
-lazy val config = (project in file("config"))
-  .withId("config")
-  .settings(ProjectSettings.config: _*)
+lazy val common = (project in file("common"))
+  .settings(
+    name := "myProject"
+  )
+  .withId("common")
+  .settings(ProjectSettings.common: _*)
 
 lazy val module1 = (project in file("module-1"))
   .withId("module-1")
+  .settings(
+    name := "module-1"
+  )
   .settings(ProjectSettings.module1: _*)
-  .dependsOn(config)
+  .dependsOn(common, module2)
 
 lazy val module2 = (project in file("module-2"))
   .withId("module-2")
+  .settings(
+    name := "module-2"
+  )
   .settings(ProjectSettings.module2: _*)
-  .dependsOn(config)
+  .dependsOn(common)
