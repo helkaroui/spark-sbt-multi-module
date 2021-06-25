@@ -1,4 +1,7 @@
 # Spark SBT Multi Module Example
+![](https://img.shields.io/github/v/tag/helkaroui/spark-sbt-multi-module?sort=date)
+![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
+
 A sample project to bootstrap all scala/spark project with multiple sbt modules.
 
 Please change the module names, dependencies, project settings accordingly.
@@ -32,3 +35,6 @@ password=xxxxxxxxxxxxxxxx
 
 
 then run `publish` in sbt
+
+
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
