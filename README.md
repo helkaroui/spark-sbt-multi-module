@@ -30,4 +30,5 @@ user=helkaroui
 password=xxxxxxxxxxxxxxxx
 ```
 
+
 then run `publish` in sbt
