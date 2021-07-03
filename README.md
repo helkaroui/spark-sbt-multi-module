@@ -36,5 +36,30 @@ password=xxxxxxxxxxxxxxxx
 
 then run `publish` in sbt
 
+## Test
+Run the tests with enabled coverage:
+```shell script
+sbt clean test
+```
+
+To generate the coverage reports run
+```shell script
+sbt coverageReport
+```
+
+By default, scoverage will generate reports for each project separately. You can merge them into an aggregated report by using the following:
+```shell script
+sbt coverageAggregate
+```
+**NOTE**: You do not need to run coverageReport before coverageAggregate
+
+## Todo :
+- Add a spark streaming example
+- Add test mocking kafka
+- Add a spark cassandra example
+- Add test mocking cassandra
+- Add Coveralls support
+- Add sbt-docker
+- Add CICD example
 
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://sharek.dev)

@@ -6,7 +6,7 @@ import org.apache.spark.sql.SparkSession
 
 trait SparkRuntime extends LazyLogging {
 
-  val configurationFile: Option[String] = None
+  def configurationFile: Option[String] = None
 
   def run(args: Args, config: FileConfig)(implicit spark: SparkSession): Unit
 
@@ -19,6 +19,7 @@ trait SparkRuntime extends LazyLogging {
 
     val sparkConf: SparkConf = new SparkConf()
       .setAll(appConfig.sparkConfig.toList)
+      .setAppName(appConfig.appName)
 
     logger.whenDebugEnabled {
       println("Spark configuration : ")

@@ -1,38 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id="module-1 [file:/home/hamza/sharek.dev/spark-sbt-multi-model/]" external.linked.project.path="$MODULE_DIR$/../../module-1" external.root.project.path="$MODULE_DIR$/../.." external.system.id="SBT" type="JAVA_MODULE" version="4">
+<module external.linked.project.id="common [file:/home/hamza/sharek.dev/spark-sbt-multi-model/]" external.linked.project.path="$MODULE_DIR$/../../common" external.root.project.path="$MODULE_DIR$/../.." external.system.id="SBT" type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
-    <output url="file://$MODULE_DIR$/../../module-1/target/scala-2.12/classes" />
-    <output-test url="file://$MODULE_DIR$/../../module-1/target/scala-2.12/test-classes" />
+    <output url="file://$MODULE_DIR$/../../common/target/scala-2.12/classes" />
+    <output-test url="file://$MODULE_DIR$/../../common/target/scala-2.12/test-classes" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../../module-1">
-      <sourceFolder url="file://$MODULE_DIR$/../../module-1/src/main/scala" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../module-1/src/it/scala" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/../../module-1/src/it/resources" type="java-test-resource" />
-      <excludeFolder url="file://$MODULE_DIR$/../../module-1/target" />
-      <excludeFolder url="file://$MODULE_DIR$/../../module-1/target/streams" />
+    <content url="file://$MODULE_DIR$/../../common">
+      <sourceFolder url="file://$MODULE_DIR$/../../common/src/main/scala" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../common/src/test/scala" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../common/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../common/src/test/resources" type="java-test-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../common/target/streams" />
+      <excludeFolder url="file://$MODULE_DIR$/../../common/target/test-reports" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="sbt: com.google.guava:guava:11.0.2:jar" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="sbt: org.apache.commons:commons-compress:1.8.1:jar" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="sbt: org.apache.hadoop:hadoop-annotations:2.7.4:jar" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="sbt: org.apache.hadoop:hadoop-auth:2.7.4:jar" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="sbt: org.apache.hadoop:hadoop-client:2.7.4:jar" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="sbt: org.apache.hadoop:hadoop-common:2.7.4:jar" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="sbt: org.apache.hadoop:hadoop-hdfs:2.7.4:jar" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="sbt: org.apache.hadoop:hadoop-mapreduce-client-app:2.7.4:jar" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="sbt: org.apache.hadoop:hadoop-mapreduce-client-common:2.7.4:jar" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="sbt: org.apache.hadoop:hadoop-mapreduce-client-core:2.7.4:jar" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="sbt: org.apache.hadoop:hadoop-mapreduce-client-jobclient:2.7.4:jar" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="sbt: org.apache.hadoop:hadoop-mapreduce-client-shuffle:2.7.4:jar" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="sbt: org.apache.hadoop:hadoop-yarn-api:2.7.4:jar" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="sbt: org.apache.hadoop:hadoop-yarn-client:2.7.4:jar" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="sbt: org.apache.hadoop:hadoop-yarn-common:2.7.4:jar" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="sbt: org.apache.hadoop:hadoop-yarn-server-common:2.7.4:jar" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="sbt: org.apache.htrace:htrace-core:3.1.0-incubating:jar" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="sbt: org.apache.httpcomponents:httpclient:4.2.5:jar" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="sbt: org.apache.httpcomponents:httpcore:4.2.4:jar" level="project" />
-    <orderEntry type="module" module-name="common" exported="" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.apache.spark:spark-streaming_2.12:3.0.1:jar" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="sbt: aopalliance:aopalliance:1.0:jar" level="project" />
     <orderEntry type="library" scope="TEST" name="sbt: asm:asm:3.1:jar" level="project" />
     <orderEntry type="library" scope="TEST" name="sbt: com.cedarsoftware:java-util:1.9.0:jar" level="project" />
@@ -246,7 +228,7 @@
     <orderEntry type="library" scope="PROVIDED" name="sbt: org.apache.spark:spark-network-shuffle_2.12:3.0.1:jar" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="sbt: org.apache.spark:spark-sketch_2.12:3.0.1:jar" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="sbt: org.apache.spark:spark-sql_2.12:3.0.1:jar" level="project" />
-    <orderEntry type="library" scope="TEST" name="sbt: org.apache.spark:spark-streaming_2.12:3.0.1:jar" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="sbt: org.apache.spark:spark-streaming_2.12:3.0.1:jar" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="sbt: org.apache.spark:spark-tags_2.12:3.0.1:jar" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="sbt: org.apache.spark:spark-unsafe_2.12:3.0.1:jar" level="project" />
     <orderEntry type="library" scope="TEST" name="sbt: org.apache.spark:spark-yarn_2.12:3.0.1:jar" level="project" />
@@ -327,6 +309,7 @@
     <orderEntry type="library" scope="TEST" name="sbt: org.scalatest:scalatest-wordspec_2.12:3.2.9:jar" level="project" />
     <orderEntry type="library" scope="TEST" name="sbt: org.scalatest:scalatest_2.12:3.2.9:jar" level="project" />
     <orderEntry type="library" scope="TEST" name="sbt: org.scalatestplus:mockito-3-4_2.12:3.2.9.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.scoverage:scalac-scoverage-runtime_2.12:1.4.8:jar" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="sbt: org.slf4j:jcl-over-slf4j:1.7.30:jar" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="sbt: org.slf4j:jul-to-slf4j:1.7.30:jar" level="project" />
     <orderEntry type="library" name="sbt: org.slf4j:slf4j-api:1.7.30:jar" level="project" />
@@ -359,6 +342,5 @@
     <orderEntry type="library" scope="PROVIDED" name="sbt: xerces:xercesImpl:2.9.1:jar" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="sbt: xml-apis:xml-apis:1.3.04:jar" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="sbt: xmlenc:xmlenc:0.52:jar" level="project" />
-    <orderEntry type="module" module-name="module-2" exported="" />
   </component>
 </module>

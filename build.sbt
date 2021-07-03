@@ -28,7 +28,7 @@ lazy val module1 = (project in file("module-1"))
     name := "spark-sbt-module-1"
   )
   .settings(ProjectSettings.module1: _*)
-  .dependsOn(common, module2)
+  .dependsOn(common % Dependencies.classDependencyCompileTest)
 
 lazy val module2 = (project in file("module-2"))
   .withId("module-2")
@@ -36,4 +36,4 @@ lazy val module2 = (project in file("module-2"))
     name := "spark-sbt-module-2"
   )
   .settings(ProjectSettings.module2: _*)
-  .dependsOn(common)
+  .dependsOn(common % Dependencies.classDependencyCompileTest)

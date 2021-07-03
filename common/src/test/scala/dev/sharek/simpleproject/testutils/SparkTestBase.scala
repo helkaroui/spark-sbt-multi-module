@@ -1,7 +1,5 @@
 package dev.sharek.simpleproject.testutils
 
-import java.nio.file.Files
-
 import com.holdenkarau.spark.testing.{DataFrameSuiteBase, DatasetSuiteBase, SharedSparkContext}
 import com.typesafe.scalalogging.LazyLogging
 import org.apache.spark.sql.{DataFrame, SparkSession}
@@ -18,11 +16,9 @@ trait SparkTestBase extends AnyFlatSpec
   with DataFrameSuiteBase
   with LazyLogging
   with MockitoSugar
-  with TestTags {
-
+  with TestTags
+  with CommonTestUtils {
   implicit def ss: SparkSession = spark
 
   def toSeqString(df: DataFrame): Seq[String] = df.select("*").collect.map(_.toString)
-
-  def createTempDirectory(prefix: String = "scalatest") = Files.createTempDirectory(prefix + "-").toFile.getAbsolutePath
 }

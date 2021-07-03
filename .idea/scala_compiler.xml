@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ScalaCompilerConfiguration">
     <profile name="sbt 1" modules="spark-sbt-multi-model_2201" />
-    <profile name="sbt 2" modules="common,module-1,module-2,root">
+    <profile name="sbt 2" modules="common,module-1,module-2,root,spark-sbt-common,spark-sbt-module-1,spark-sbt-module-2,spark-sbt-multi-module">
+      <option name="postfixOps" value="true" />
       <option name="deprecationWarnings" value="true" />
       <option name="uncheckedWarnings" value="true" />
       <option name="featureWarnings" value="true" />

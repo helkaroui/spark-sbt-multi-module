@@ -5,7 +5,9 @@ import pureconfig.generic.auto._
 import pureconfig.{ConfigObjectSource, ConfigSource}
 
 case class Application(
-                        savePath: String
+                        savePath: String = "",
+                        host: String = "localhost",
+                        port: Int = 8080
                       )
 
 case class FileConfig(
